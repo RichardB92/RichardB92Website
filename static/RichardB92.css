@@ -2,7 +2,7 @@
 body {
 	margin: 0;
 	background-color:#343a40;
-	background-image: url(images/Engineer1.png);
+	background-image: url("images/Engineer1.png");
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center center;
