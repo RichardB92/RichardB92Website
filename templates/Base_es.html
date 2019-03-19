@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>RichardB92 Ingeniero</title>
+	<meta name="viewport" content="width=device-width, initialscale=1">
+	<link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+	<link href="{{url_for('static', filename='RichardB92.css')}}" rel="stylesheet">
+	<link rel="shortcut icon" href="{{url_for('static', filename='images/LogoRichardNegro2020.ico')}}">
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="{{ url_for('index') }}><img src="static/images/LogoRichardBlanco2020.svg">RichardB92</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+		  <li class="nav-item active">
+            <a class="nav-link" href="https://github.com/RichardB92" target="_blank">Github</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Servicios</a>
+          </li>
+		  <li class="nav-item active">
+            <a class="nav-link" href="#">Experiencias</a>
+          </li>
+		  <li class="nav-item active">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+	
+	{% block content %}
+	{% endblock %}
+       
+      <footer class="container" >
+          <p>Desarrollado usando <a href="https://getbootstrap.com/">Bootstrap 4</a></p>
+      </footer>
+ 
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/
+jquery.min.js"></script>
+ <!-- Include all compiled plugins (below), or include individual files
+as needed -->
+ <script src="static/js/bootstrap.min.js"></script>
+ </body>
+</html>

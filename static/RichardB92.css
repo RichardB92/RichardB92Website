@@ -1,0 +1,23 @@
+/*Custom css for RichardB92 personal webpage*/
+body {
+	margin: 0;
+	background-color:#343a40;
+	background-image: url(Images/Engineer1.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	padding: 7.5rem;/*Because of the nav Bar*/
+}
+footer {
+	padding-top: 3.5rem;/*Because of the nav Bar*/
+}
+p {
+	color: white;
+}
+
+a {
+	color: white;
+}
