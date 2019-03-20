@@ -8,7 +8,7 @@
 	<link href="{{url_for('static', filename='RichardB92.css')}}" rel="stylesheet">
 	<link rel="shortcut icon" href="{{url_for('static', filename='images/LogoRichardNegro2020.ico')}}">
 </head>
-<body style="background-image: url('static/images/Engineer1.png');">
+<body style="background-image: url('static/images/Engineer1.png');background-attachment: fixed;">
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <a class="navbar-brand" href="{{ url_for('index') }}"><img src="static/images/LogoRichardBlanco2020.svg">RichardB92</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@
             <a class="nav-link" href="#">Experiences</a>
           </li>
 		  <li class="nav-item active">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
           </li>
         </ul>
       </div>

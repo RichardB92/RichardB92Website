@@ -12,11 +12,15 @@ def get_locale():
 	
 @app.route("/")
 def index():
-	if get_locale() is "en":
-		return render_template("index_en.html")
-	else:
-		return render_template("index_es.html")
-	
+	return render_template("index_"+ get_locale() +".html")
+	# if get_locale() is "en":
+		# return render_template("index_en.html")
+	# else:
+		# return render_template("index_es.html")
+
+@app.route("/contact")
+def contact():
+	return render_template("contact_"+ get_locale() +".html")		
 
 if __name__=="__main__":
 	app.run(debug=True)
